@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.128.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.128.0"><script src="/magic-note/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=magic-note/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
@@ -10,17 +10,17 @@
 
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.d72444526d7ecbdb0015438a7fa89054a658bf759d0542e2e5df81ce94b493ee.css" integrity="sha256-1yREUm1&#43;y9sAFUOKf6iQVKZYv3WdBULi5d&#43;BzpS0k&#43;4=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/magic-note/">
+<link crossorigin="anonymous" href="/magic-note/assets/css/stylesheet.d72444526d7ecbdb0015438a7fa89054a658bf759d0542e2e5df81ce94b493ee.css" integrity="sha256-1yREUm1&#43;y9sAFUOKf6iQVKZYv3WdBULi5d&#43;BzpS0k&#43;4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/magic-note/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/magic-note/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/magic-note/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/magic-note/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/magic-note/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/magic-note/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/magic-note/">
 <noscript>
     <style>
         #theme-toggle,
@@ -75,7 +75,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <a href="http://localhost:1313/magic-note/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -107,19 +107,53 @@
 
 <article class="first-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p></p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-13 21:27:05 +0800 CST'>December 13, 2024</span>&nbsp;·&nbsp;0 min&nbsp;·&nbsp;0 words&nbsp;·&nbsp;Jeff</footer>
+  <a class="entry-link" aria-label="post link to 1" href="http://localhost:1313/magic-note/post/1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hugo &#43; Github Pages制作个人学习博客
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. 下载Hugo 进入网址 Releases · gohugoio/hugo，下载相关文件
+安装完成后重启终端，输入 hugo version 可以查看下载的Hugo版本信息
+2. 初始化Hugo博客 在存储笔记文件的根目录下，输入
+hugo new site &lt;your_blog_name&gt; --format yml cd &lt;your_blog_name&gt; git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod 随后将目录下的 &lt;hugo.yml&gt; 输入 theme: PaperMod
+注意：
+--format不能输入--f
+更多主题自行探索 Complete List | Hugo Themes
+3. Github配置 3.1 新建仓库并关联 先新建一个repository，选择Public公开
+然后将项目关联到远程，以下为web关联，也可以选择更稳定的ssh：
+git remote add origin https://github.com/username/&lt;your_blog_name&gt;.git git branch -M main 3.2 创建文章并测试 hugo new post/test.md hugo server -D 3.3 新建分支 在Github项目仓中，创建新的分支
+4. 部署Github Action 4....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-13 21:27:05 +0800 CST'>December 13, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;312 words&nbsp;·&nbsp;zhm</footer>
+  <a class="entry-link" aria-label="post link to Hugo &#43; Github Pages制作个人学习博客" href="http://localhost:1313/magic-note/post/1_create_hugo_blog/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Test
     </h2>
   </header>
   <div class="entry-content">
-    <p>Be patient ^.^</p>
+    <p>Be patient ^.^ heihei ~</p>
   </div>
   <footer class="entry-footer"><span title='2024-12-13 20:44:43 +0800 CST'>December 13, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Test" href="http://localhost:1313/post/test/"></a>
+  <a class="entry-link" aria-label="post link to Test" href="http://localhost:1313/magic-note/post/test/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+        <span>&copy; 2024 <a href="http://localhost:1313/magic-note/">My New Hugo Site</a></span> · 
 
     <span>
         Powered by

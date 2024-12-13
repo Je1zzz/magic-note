@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>http://localhost:1313/magic-note/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>😁无用小笔记 on My New Hugo Site</title>
+    <link>http://localhost:1313/magic-note/tags/%E6%97%A0%E7%94%A8%E5%B0%8F%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 😁无用小笔记 on My New Hugo Site</description>
     <generator>Hugo -- 0.128.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Dec 2024 21:27:05 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/magic-note/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>1</title>
-      <link>http://localhost:1313/magic-note/post/1/</link>
-      <pubDate>Fri, 13 Dec 2024 21:27:05 +0800</pubDate>
-      <guid>http://localhost:1313/magic-note/post/1/</guid>
-      <description></description>
-    </item>
+    <atom:link href="http://localhost:1313/magic-note/tags/%E6%97%A0%E7%94%A8%E5%B0%8F%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo &#43; Github Pages制作个人学习博客</title>
       <link>http://localhost:1313/magic-note/post/1_create_hugo_blog/</link>
@@ -31,13 +24,6 @@ hugo new site &amp;lt;your_blog_name&amp;gt; --format yml cd &amp;lt;your_blog_n
 然后将项目关联到远程，以下为web关联，也可以选择更稳定的ssh：
 git remote add origin https://github.com/username/&amp;lt;your_blog_name&amp;gt;.git git branch -M main 3.2 创建文章并测试 hugo new post/test.md hugo server -D 3.3 新建分支 在Github项目仓中，创建新的分支
 4. 部署Github Action 4.</description>
-    </item>
-    <item>
-      <title>Test</title>
-      <link>http://localhost:1313/magic-note/post/test/</link>
-      <pubDate>Fri, 13 Dec 2024 20:44:43 +0800</pubDate>
-      <guid>http://localhost:1313/magic-note/post/test/</guid>
-      <description>Be patient ^.^ heihei ~</description>
     </item>
   </channel>
 </rss>
