@@ -1,2 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on My New Hugo Site</title><link>https://Je1zzz.github.io/magic-note/post/</link><description>Recent content in Posts on My New Hugo Site</description><generator>Hugo -- 0.139.4</generator><language>en-us</language><lastBuildDate>Fri, 13 Dec 2024 20:44:43 +0800</lastBuildDate><atom:link href="https://Je1zzz.github.io/magic-note/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Test</title><link>https://Je1zzz.github.io/magic-note/post/test/</link><pubDate>Fri, 13 Dec 2024 20:44:43 +0800</pubDate><guid>https://Je1zzz.github.io/magic-note/post/test/</guid><description>&lt;h2 id="be-patient">Be patient&lt;/h2>
-&lt;p>^.^ heihei ~&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on My New Hugo Site</title><link>https://Je1zzz.github.io/magic-note/post/</link><description>Recent content in Posts on My New Hugo Site</description><generator>Hugo -- 0.139.4</generator><language>en-us</language><lastBuildDate>Fri, 13 Dec 2024 21:27:05 +0800</lastBuildDate><atom:link href="https://Je1zzz.github.io/magic-note/post/index.xml" rel="self" type="application/rss+xml"/><item><title>1</title><link>https://Je1zzz.github.io/magic-note/post/1/</link><pubDate>Fri, 13 Dec 2024 21:27:05 +0800</pubDate><guid>https://Je1zzz.github.io/magic-note/post/1/</guid><description/></item><item><title>Test</title><link>https://Je1zzz.github.io/magic-note/post/test/</link><pubDate>Fri, 13 Dec 2024 20:44:43 +0800</pubDate><guid>https://Je1zzz.github.io/magic-note/post/test/</guid><description>&lt;h2 id="be-patient">Be patient&lt;/h2>
+&lt;p>^.^ heihei ~&lt;/p></description></item><item><title/><link>https://Je1zzz.github.io/magic-note/post/1_create_hugo_blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Je1zzz.github.io/magic-note/post/1_create_hugo_blog/</guid><description>&lt;h2 id="1-下载hugo">1. 下载Hugo&lt;/h2>
+&lt;p>进入网址 &lt;a href="https://github.com/gohugoio/hugo/releases">Releases · gohugoio/hugo&lt;/a>，下载相关文件&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://Je1zzz.github.io/magic-note/1_make_blog/2024-12-13-20-20-33-image.png">&lt;/p>
+&lt;p>安装完成后重启终端，输入 &lt;code>hugo version&lt;/code> 可以查看下载的Hugo版本信息&lt;/p>
+&lt;h2 id="2-初始化hugo博客">2. 初始化Hugo博客&lt;/h2>
+&lt;p>在存储笔记文件的根目录下，输入&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>hugo new site &lt;span style="color:#f92672">&amp;lt;&lt;/span>your_blog_name&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#f92672">--&lt;/span>format yml
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd &lt;span style="color:#f92672">&amp;lt;&lt;/span>your_blog_name&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git init
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git submodule add &lt;span style="color:#f92672">--&lt;/span>depth&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> https:&lt;span style="color:#f92672">//&lt;/span>github&lt;span style="color:#f92672">.&lt;/span>com&lt;span style="color:#f92672">/&lt;/span>adityatelange&lt;span style="color:#f92672">/&lt;/span>hugo&lt;span style="color:#f92672">-&lt;/span>PaperMod&lt;span style="color:#f92672">.&lt;/span>git themes&lt;span style="color:#f92672">/&lt;/span>PaperMod
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>随后将目录下的 &amp;lt;hugo.yml&amp;gt; 输入 &lt;code>theme: PaperMod&lt;/code>&lt;/p>
+&lt;p>注意：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>--format&lt;/code>不能输入&lt;code>--f&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>更多主题自行探索 &lt;a href="https://themes.gohugo.io/">Complete List | Hugo Themes&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-github配置">3. Github配置&lt;/h2>
+&lt;h3 id="31-新建仓库并关联">3.1 新建仓库并关联&lt;/h3>
+&lt;p>先新建一个repository，选择&lt;code>Public&lt;/code>公开&lt;/p>
+&lt;p>然后将项目关联到远程，以下为web关联，也可以选择更稳定的ssh：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>git remote add origin https:&lt;span style="color:#f92672">//&lt;/span>github&lt;span style="color:#f92672">.&lt;/span>com&lt;span style="color:#f92672">/&lt;/span>username&lt;span style="color:#f92672">/&amp;lt;&lt;/span>your_blog_name&lt;span style="color:#f92672">&amp;gt;.&lt;/span>git
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git branch &lt;span style="color:#f92672">-&lt;/span>M main
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="32-创建文章并测试">3.2 创建文章并测试&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>hugo new post&lt;span style="color:#f92672">/&lt;/span>test&lt;span style="color:#f92672">.&lt;/span>md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo server &lt;span style="color:#f92672">-&lt;/span>D
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img loading="lazy" src="https://Je1zzz.github.io/magic-note/1_make_blog/2024-12-13-20-45-10-image.png">&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://Je1zzz.github.io/magic-note/1_make_blog/2024-12-13-20-45-30-image.png">&lt;/p>
+&lt;h3 id="33-新建分支">3.3 新建分支&lt;/h3>
+&lt;p>在Github项目仓中，创建新的分支&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://Je1zzz.github.io/magic-note/1_make_blog/2024-12-13-20-46-49-image.png">&lt;/p>
+&lt;h2 id="4-部署github-action">4. 部署Github Action&lt;/h2>
+&lt;h3 id="41-填写deployyml文件">4.1 填写deploy.yml文件&lt;/h3>
+&lt;p>在项目的&amp;lt; hugo.yml &amp;gt;中，将baseURL设置为&lt;/p></description></item></channel></rss>
