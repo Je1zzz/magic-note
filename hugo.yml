@@ -1,4 +1,182 @@
 baseURL: https://Je1zzz.github.io/magic-note/
 languageCode: en-us
-title: 😎Zhm's Blog
+title: 😎Zhm's Blog # 标签栏
 theme: PaperMod
+
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  #title: "Zhm's Blog"
+  #description: "Zhm's Blog"
+  keywords: [Blog, Zhm, Jeffzvz]
+  author: zhm
+  # author: ["Me", "You"] # multiple authors
+  DateFormat: "2006-01-02"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  busuanzi:
+    enable: true
+  ShowReadingTime: true
+  ShowShareButtons: false # 共享button
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true # home>posts 这种面包屑导航
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  showtoc: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  hidemeta: false
+  hideSummary: false
+  tocopen: false
+  comments: true
+
+
+  # assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    # favicon: "<link / abs url>"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: "🦄My mental home"
+    subtitle: ""
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "🦄Magic Notebook"
+    Content: 
+
+  socialIcons:
+    - name: github
+      url: "https://Je1zzz.github.io/magic-note/"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://Je1zzz.github.io/magic-note/issue"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts: # 模糊搜索
+    isCaseSensitive: false # 大小写
+    shouldSort: true # 匹配程度排序
+    location: 0 # 优先搜索位置
+    distance: 1000 # 最大搜索位置
+    threshold: 0.4 # 模糊程度，0表示完全匹配
+    minMatchCharLength: 0 # 最小匹配字符
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"] ## 搜索的key
+menu:
+  main:
+    - identifier: archives 
+      name: Archives
+      url: /archives/
+      weight: 10
+    - identifier: Tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: Search 
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: EmojiAll
+      name: Emoji
+      url: https://www.emojiall.com/zh-hans
+      weight: 40
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    # lineNos: true
+    style: monokai
+    tableOfContents:
+      startLevel: 1
+      endLevel: 6
+      ordered: true
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+          - - $
+            - $
+        enable: true
+
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+outputs:
+    home:
+      - HTML
+      - RSS
+      - JSON # is necessary
+
+disqus:
+  enable: true
+  shortname: https-jeffzvz-github-io
+  count : true

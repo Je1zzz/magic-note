@@ -10,10 +10,10 @@
     <atom:link href="http://localhost:1313/magic-note/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo &#43; Github pages制作个人学习博客</title>
-      <link>http://localhost:1313/magic-note/post/1_create_hugo_blog/</link>
+      <link>http://localhost:1313/magic-note/post/post1/</link>
       <pubDate>Fri, 13 Dec 2024 21:39:54 +0800</pubDate>
-      <guid>http://localhost:1313/magic-note/post/1_create_hugo_blog/</guid>
-      <description>Todo: 图像不能显示 1. 下载Hugo 进入网址 Releases · gohugoio/hugo，下载相关文件
+      <guid>http://localhost:1313/magic-note/post/post1/</guid>
+      <description>Todo: 图像不能显示 (解决方法) 1. 下载Hugo 进入网址 Releases · gohugoio/hugo，下载相关文件
 安装完成后重启终端，输入 hugo version 可以查看下载的Hugo版本信息
 2. 初始化Hugo博客 在存储笔记文件的根目录下，输入
 hugo new site &amp;lt;your_blog_name&amp;gt; --format yml cd &amp;lt;your_blog_name&amp;gt; git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod 随后将目录下的 &amp;lt;hugo.yml&amp;gt; 输入 theme: PaperMod

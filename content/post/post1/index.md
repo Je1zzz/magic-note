@@ -21,7 +21,8 @@ ShowPostNavLinks: true                                          # 显示文章�
 ShowWordCount: true                                             # 字数统计
 ShowRssButtonInSectionTermList: true                            # idk
 UseHugoToc: true                                                  # 使用Hugo生成的目录
-math: true    
+math: true  
+uglyurls: true  
 editPost:
     URL: "https://github.com/Je1zzz/magic-note/issues"
     Text: "Suggest Changes" # edit text
@@ -29,13 +30,13 @@ editPost:
 ---
 
 ### Todo:
-- [ ] 图像不能显示
+- [x] 图像不能显示 ([解决方法](https://sur.moe/post/hugo%E5%9B%BE%E7%89%87/))
 
 ## 1. 下载Hugo
 
 进入网址 [Releases · gohugoio/hugo](https://github.com/gohugoio/hugo/releases)，下载相关文件
 
-![](/1_make_blog/image1.png)
+![](/image/image1.png#center)
 
 安装完成后重启终端，输入 ``hugo version`` 可以查看下载的Hugo版本信息 
 
@@ -78,15 +79,15 @@ hugo new post/test.md
 hugo server -D
 ```
 
-![](/1_make_blog/2024-12-13-20-45-10-image.png)
+![](/image/2024-12-13-20-45-10-image.png#center)
 
-![](/1_make_blog/2024-12-13-20-45-30-image.png)
+![](/image/2024-12-13-20-45-30-image.png#center)
 
 ### 3.3 新建分支
 
 在Github项目仓中，创建新的分支
 
-![](/1_make_blog/2024-12-13-20-46-49-image.png)
+![](/image/2024-12-13-20-46-49-image.png#center)
 
 ## 4. 部署Github Action
 
@@ -102,7 +103,7 @@ baseURL: https://<username>.github.io/<your_blog_name>/
 
 并在目录下创建 .github/workflows/deploy.yml
 
-![](/1_make_blog/2024-12-13-20-51-04-image.png)
+![](/image/2024-12-13-20-51-04-image.png#center)
 
 填入如下：
 
@@ -178,11 +179,11 @@ jobs:
 
 打开网址[Personal Access Tokens (Classic)](https://github.com/settings/tokens)，生成token后复制
 
-![](/1_make_blog/2024-12-13-20-57-27-image.png)
+![](/image/2024-12-13-20-57-27-image.png#center)
 
 然后在github的项目设置中写入secret
 
-![](/1_make_blog/2024-12-13-20-59-53-image.png)
+![](/image/2024-12-13-20-59-53-image.png#center)
 
 ## 5. 测试
 
@@ -208,11 +209,11 @@ git push
 
 可以在Actions看见已经成功了
 
-![](/1_make_blog/2024-12-13-21-09-24-image.png)
+![](/image/2024-12-13-21-09-24-image.png#center)
 
 打开网址
 
-![](/1_make_blog/2024-12-13-21-10-12-image.png)
+![](/image/2024-12-13-21-10-12-image.png#center)
 
 ## 6. 上传新笔记
 
@@ -250,11 +251,11 @@ math: true
 
 将笔记已以下形式存储好，一个md文件以及一个专门存储该md文件的图像的文件夹
 
-![](picture_saved/2024-12-13-21-13-43-image.png)
+![](image/2024-12-13-21-13-43-image.#center)
 
-然后将md文件拖入到post里，再将img文件拖入到static里。复制头信息到最前面， 并更改文件中图像文件的格式，可以按`CTRL+F2`一起修改路径，修改为``/folder_name/xx.png``
+然后将md文件拖入到post里，再将image文件拖入到static里。复制头信息到最前面， 并更改文件中图像文件的格式，可以按`CTRL+F2`一起修改路径，修改为``/folder_name/xx.#center``
 
-![](picture_saved/2024-12-13-21-34-46-image.png)
+![](image/2024-12-13-21-34-46-image.png#center)
 
 
 
@@ -270,9 +271,9 @@ git add .
 git commit -m "update passage XX"
 git push
 ```
-
+![alt text](/image/what.jpg)
 ## 参考
 
-[1] [Hugo如何在markdown里引用本地图片 - Jincheng9's blog](https://jincheng9.github.io/post/hugo-add-img/)
+[1] [Hugo如何在markdown里引用本地图片 - Jincheng9's blog](https://jincheng9.github.io/post/hugo-add-image/)
 
 [2] [hugo+Stack 搭建个人博客](https://hyrtee.github.io/2023/start-blog/#%E5%AE%89%E8%A3%85-hugo)
