@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>😎Zhm&#39;s Blog</title>
     <link>http://localhost:1313/magic-note/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on 😎Zhm&#39;s Blog</description>
     <generator>Hugo -- 0.128.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Dec 2024 21:27:05 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2024 21:39:54 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/magic-note/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1</title>
-      <link>http://localhost:1313/magic-note/post/1/</link>
-      <pubDate>Fri, 13 Dec 2024 21:27:05 +0800</pubDate>
-      <guid>http://localhost:1313/magic-note/post/1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hugo &#43; Github Pages制作个人学习博客</title>
+      <title>Hugo &#43; Github pages制作个人学习博客</title>
       <link>http://localhost:1313/magic-note/post/1_create_hugo_blog/</link>
-      <pubDate>Fri, 13 Dec 2024 21:27:05 +0800</pubDate>
+      <pubDate>Fri, 13 Dec 2024 21:39:54 +0800</pubDate>
       <guid>http://localhost:1313/magic-note/post/1_create_hugo_blog/</guid>
-      <description>1. 下载Hugo 进入网址 Releases · gohugoio/hugo，下载相关文件
+      <description>Todo: 图像不能显示 1. 下载Hugo 进入网址 Releases · gohugoio/hugo，下载相关文件
 安装完成后重启终端，输入 hugo version 可以查看下载的Hugo版本信息
 2. 初始化Hugo博客 在存储笔记文件的根目录下，输入
 hugo new site &amp;lt;your_blog_name&amp;gt; --format yml cd &amp;lt;your_blog_name&amp;gt; git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod 随后将目录下的 &amp;lt;hugo.yml&amp;gt; 输入 theme: PaperMod
@@ -29,15 +22,7 @@ hugo new site &amp;lt;your_blog_name&amp;gt; --format yml cd &amp;lt;your_blog_n
 更多主题自行探索 Complete List | Hugo Themes
 3. Github配置 3.1 新建仓库并关联 先新建一个repository，选择Public公开
 然后将项目关联到远程，以下为web关联，也可以选择更稳定的ssh：
-git remote add origin https://github.com/username/&amp;lt;your_blog_name&amp;gt;.git git branch -M main 3.2 创建文章并测试 hugo new post/test.md hugo server -D 3.3 新建分支 在Github项目仓中，创建新的分支
-4. 部署Github Action 4.</description>
-    </item>
-    <item>
-      <title>Test</title>
-      <link>http://localhost:1313/magic-note/post/test/</link>
-      <pubDate>Fri, 13 Dec 2024 20:44:43 +0800</pubDate>
-      <guid>http://localhost:1313/magic-note/post/test/</guid>
-      <description>Be patient ^.^ heihei ~</description>
+git remote add origin https://github.com/username/&amp;lt;your_blog_name&amp;gt;.git git branch -M main 3.2 创建文章并测试 hugo new post/test.md hugo server -D 3.3 新建分支 在Github项目仓中，创建新的分支</description>
     </item>
   </channel>
 </rss>

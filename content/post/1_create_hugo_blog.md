@@ -1,8 +1,41 @@
+---
+title: "Hugo + Github pages制作个人学习博客"    # 标题，去掉横短线病转换为标题格式
+date: 2024-12-13T21:39:54+08:00                                               # 发布日期
+tags: ["😁无用小笔记"]                                                      # 分类和标记，用于过滤
+author: "zhm"                                                  # 作者
+# author: ["Me", "You"] # multiple authors
+showToc: true                                                   # 显示目录
+TocOpen: false                                                  # 默认展开
+draft: false                                                    # 是否为草稿（True则会发布）
+hidemeta: false                                                 # 隐藏元信息（作者、发布日期等）
+comments: false                                                 # 是否comments
+description: ""                                                 # 文章描述
+canonicalURL: "https://canonical.url/to/page"                   # idk
+disableShare: false                                             # 禁止分享
+disableHLJS: false                                              # 禁用代码高亮
+hideSummary: false                                              # 隐藏文章摘要
+searchHidden: false                                             # 在search里隐藏文章
+ShowReadingTime: true                                           # 显示阅读时间
+ShowBreadCrumbs: true                                           # 显示面包屑导航
+ShowPostNavLinks: true                                          # 显示文章导航（下一篇，上一篇）
+ShowWordCount: true                                             # 字数统计
+ShowRssButtonInSectionTermList: true                            # idk
+UseHugoToc: true                                                  # 使用Hugo生成的目录
+math: true    
+editPost:
+    URL: "https://github.com/Je1zzz/magic-note/issues"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: false # to append file path to Edit link  
+---
+
+### Todo:
+- [ ] 图像不能显示
+
 ## 1. 下载Hugo
 
 进入网址 [Releases · gohugoio/hugo](https://github.com/gohugoio/hugo/releases)，下载相关文件
 
-![](/1_make_blog/2024-12-13-20-20-33-image.png)
+![](/1_make_blog/image1.png)
 
 安装完成后重启终端，输入 ``hugo version`` 可以查看下载的Hugo版本信息 
 

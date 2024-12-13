@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>😁无用小笔记 on My New Hugo Site</title>
+    <title>😁无用小笔记 on 😎Zhm&#39;s Blog</title>
     <link>http://localhost:1313/magic-note/tags/%E6%97%A0%E7%94%A8%E5%B0%8F%E7%AC%94%E8%AE%B0/</link>
-    <description>Recent content in 😁无用小笔记 on My New Hugo Site</description>
+    <description>Recent content in 😁无用小笔记 on 😎Zhm&#39;s Blog</description>
     <generator>Hugo -- 0.128.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Dec 2024 21:27:05 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2024 21:39:54 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/magic-note/tags/%E6%97%A0%E7%94%A8%E5%B0%8F%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo &#43; Github Pages制作个人学习博客</title>
+      <title>Hugo &#43; Github pages制作个人学习博客</title>
       <link>http://localhost:1313/magic-note/post/1_create_hugo_blog/</link>
-      <pubDate>Fri, 13 Dec 2024 21:27:05 +0800</pubDate>
+      <pubDate>Fri, 13 Dec 2024 21:39:54 +0800</pubDate>
       <guid>http://localhost:1313/magic-note/post/1_create_hugo_blog/</guid>
       <description>1. 下载Hugo 进入网址 Releases · gohugoio/hugo，下载相关文件
 安装完成后重启终端，输入 hugo version 可以查看下载的Hugo版本信息
