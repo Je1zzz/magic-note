@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://Je1zzz.github.io/magic-note/sitemap.xml
